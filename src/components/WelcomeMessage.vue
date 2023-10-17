@@ -32,7 +32,7 @@ import youtubeIcon from "../assets/icons/youtube.png"
             </a>
           </div>
           <div>
-            <a target="_blank" href="https://www.youtube.com">
+            <a target="_blank" href="https://www.youtube.com/channel/UCES11jeVrqq2QrK8tgrBLtQ">
                 <div class="w-full flex justify-center transition">
                     <img :src="youtubeIcon" alt="" class="w-8 transition hover:scale-125" />
                 </div>
