@@ -10,31 +10,31 @@ import youtubeIcon from "../assets/icons/youtube.png"
       <p class="text-orange-100 text-6xl font-bold mb-6 font-serif">YU-KAL</p>
       <p class="text-orange-300 text-3xl font-serif">Sitio en construcción</p>
       <p class="text-orange-100 ">Visitanos muy pronto para más informacion</p>
-      <div class="mt-4">
-        <p class="mb-4 text-2xl text-orange-300 font-serif">
-          Links a nuestras Redes Sociales
+      <div class="mt-8">
+        <p class="mb-4 text-2xl text-orange-100 font-serif">
+          Nuestras Redes Sociales
         </p>
         <div class="flex justify-around text-orange-100 ">
           <div>
-            <a target="_blank" href="https://www.google.com">
-                <div class="w-full flex justify-center">
-                    <img :src="instagramIcon" alt="" class="w-8" />
+            <a target="_blank" href="https://www.instagram.com/yukal55/">
+                <div class="w-full flex justify-center transition">
+                    <img :src="instagramIcon" alt=""  class="w-8 transition hover:scale-125" />
                 </div>
                 <p>Instagram</p>
             </a>
           </div>
           <div>
-            <a target="_blank" href="https://www.google.com">
-                <div class="w-full flex justify-center">
-                    <img :src="facebookIcon" alt="" class="w-8" />
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61551924016783">
+                <div class="w-full flex justify-center transition">
+                    <img :src="facebookIcon" alt=""  class="w-8 transition hover:scale-125" />
                 </div>
                 <p>Facebook</p>
             </a>
           </div>
           <div>
             <a target="_blank" href="https://www.youtube.com">
-                <div class="w-full flex justify-center">
-                    <img :src="youtubeIcon" alt="" class="w-8" />
+                <div class="w-full flex justify-center transition">
+                    <img :src="youtubeIcon" alt="" class="w-8 transition hover:scale-125" />
                 </div>
                 <p>YouTube</p>
             </a>
