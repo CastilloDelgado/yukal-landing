@@ -1,13 +1,16 @@
 <script setup>
 import backgroundImage from "../assets/background.jpg"
+import Layout from "./Layout.vue";
 import WelcomeMessage from "./WelcomeMessage.vue"
 </script>
 
 <template>
-  <div class="background h-screen grid place-content-center ">
-    <img class="background h-screen w-screen" :src="backgroundImage" alt="Background">
-    <WelcomeMessage />
-  </div>
+  <Layout>
+    <div class="background h-screen grid place-content-center ">
+      <img class="background h-screen w-full" :src="backgroundImage" alt="Background">
+      <WelcomeMessage />
+    </div>
+  </Layout>
 </template>
 
 <style focused>
