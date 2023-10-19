@@ -14,7 +14,7 @@ import textLogo from "../assets/text-logo.png"
         <img :src="logo" class="h-24" alt="">
         <img :src="textLogo" class="h-24" alt="">
       </div>
-      <p class="text-orange-300 text-3xl font-serif">Sitio en construcción</p>
+      <p class="text-orange-300 text-3xl font-serif font-bold">Sitio en construcción</p>
       <p class="text-orange-100 ">Visitanos muy pronto para más informacion</p>
       <div class="mt-8">
         <p class="mb-4 text-2xl text-orange-100 font-serif">
