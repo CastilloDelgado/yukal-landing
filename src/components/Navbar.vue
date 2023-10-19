@@ -10,12 +10,12 @@ const options = ref([
         alt: "inicio",
         link: "/"
     },
-    {
-        id: 2,
-        title: "Contacto",
-        alt: "contacto",
-        link: "/contacto"
-    },
+    // {
+    //     id: 2,
+    //     title: "Contacto",
+    //     alt: "contacto",
+    //     link: "/contacto"
+    // },
 ])
 
 </script>
