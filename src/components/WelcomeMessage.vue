@@ -2,12 +2,18 @@
 import facebookIcon from "../assets/icons/facebook.png"
 import instagramIcon from "../assets/icons/instagram.png"
 import youtubeIcon from "../assets/icons/youtube.png"
+import logo from "../assets/logo.png"
+import textLogo from "../assets/text-logo.png"
+
 </script>
 
 <template>
     <!-- Message -->
-    <div class="bg-black/20 text-center md:px-24 md:py-16 px-6 py-12"> 
-      <p class="text-orange-100 text-6xl font-bold mb-6 font-serif">YU-KAL</p>
+    <div class="bg-primary-500/50 text-center md:px-24 md:py-16 px-6 py-12 rounded"> 
+      <div class="flex justify-center mb-6">
+        <img :src="logo" class="h-24" alt="">
+        <img :src="textLogo" class="h-24" alt="">
+      </div>
       <p class="text-orange-300 text-3xl font-serif">Sitio en construcción</p>
       <p class="text-orange-100 ">Visitanos muy pronto para más informacion</p>
       <div class="mt-8">

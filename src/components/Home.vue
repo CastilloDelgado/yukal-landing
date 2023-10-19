@@ -1,5 +1,5 @@
 <script setup>
-import backgroundImage from "../assets/background.jpg"
+import backgroundImage from "../assets/background.jpeg"
 import Layout from "./Layout.vue";
 import WelcomeMessage from "./WelcomeMessage.vue"
 </script>
@@ -20,7 +20,7 @@ img.background {
   z-index: -1;
   object-fit: cover;
   -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(1px);
+  filter: blur(10px);
 }
 
 </style>
