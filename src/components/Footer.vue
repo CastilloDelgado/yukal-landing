@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gradient-to-r from-primary-400 to-primary-500 py-6 flex justify-center">
+    <div class="bg-gradient-to-r from-primary-600 to-primary-800 py-6 flex justify-center">
         <div class="text-center text-xs text-light-500">
             <p class="font-bold text-lg mb-2">Yu-Kal Company</p>
             <p class="">Email: <a class="font-bold" href="#">contacto@yu-kal.com</a></p>
