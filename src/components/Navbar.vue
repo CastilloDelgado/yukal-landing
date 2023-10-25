@@ -17,14 +17,14 @@ const options = ref([
         title: "Nuestros Servicios",
         alt: "inicio",
         link: "/",
-        selected: true
+        selected: false
     },
     {
         id: 3,
         title: "Contacto",
         alt: "inicio",
         link: "/",
-        selected: true
+        selected: false
     },
 ])
 
@@ -41,8 +41,11 @@ const options = ref([
                 </div>
             </div>
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <div class="flex">
+                    <div class="flex align-middle">
                         <NavbarLink v-for="option in options" :key="option.id" :option="option"  />
+                        <button class="bg-light-600 text-light-50 px-2 py-1 rounded font-bold">
+                            Newsletter
+                        </button>
                     </div>
                 </div>
                 

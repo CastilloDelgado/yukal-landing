@@ -8,14 +8,12 @@ defineProps({
 </script>
 
 <template>
-    <p  
-        class="text-light-200 mr-3 hover:scale-105 transition"
+    <a :href="option.link" 
+        class="grid place-content-center text-light-200 mr-3 content-center hover:text-light-50"
         :class="{
-            'font-bold': true
+            'font-bold border-b border-white text-light-50': option.selected
         }"
     >
-        <a :href="option.link" >
-            {{ option.title }}
-        </a>
-    </p>
+        {{ option.title }}
+    </a>
 </template>
