@@ -2,13 +2,29 @@
 import { ref } from 'vue';
 import logo from "../assets/logo.png"
 import textLogo from "../assets/text-logo.png"
+import NavbarLink from './NavbarLink.vue';
 
 const options = ref([
     {
         id: 1,
         title: "Inicio",
         alt: "inicio",
-        link: "/"
+        link: "/",
+        selected: true
+    },
+    {
+        id: 2,
+        title: "Nuestros Servicios",
+        alt: "inicio",
+        link: "/",
+        selected: true
+    },
+    {
+        id: 3,
+        title: "Contacto",
+        alt: "inicio",
+        link: "/",
+        selected: true
     },
 ])
 
@@ -25,14 +41,11 @@ const options = ref([
                 </div>
             </div>
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4">
-                            <a v-for="option in options" :key="option.id" :href="option.link" class="font-bold bg-primary-400/70 hover:bg-primary-400/100 hover:scale-105 transition text-light-100 rounded-md px-3 py-2 text-sm" aria-current="page">
-                                {{ option.title  }}
-                            </a>
-                        </div>
+                    <div class="flex">
+                        <NavbarLink v-for="option in options" :key="option.id" :option="option"  />
                     </div>
                 </div>
+                
             </div>
         </div>
     </nav>
