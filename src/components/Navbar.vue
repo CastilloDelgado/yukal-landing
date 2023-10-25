@@ -41,9 +41,9 @@ const options = ref([
                 </div>
             </div>
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <div class="flex align-middle">
+                    <div class="align-middle hidden sm:flex">
                         <NavbarLink v-for="option in options" :key="option.id" :option="option"  />
-                        <button class="bg-light-600 text-light-50 px-2 py-1 rounded font-bold">
+                        <button class="bg-light-600 text-light-50 px-3 py-1 hover:scale-105 transition rounded font-bold">
                             Newsletter
                         </button>
                     </div>
