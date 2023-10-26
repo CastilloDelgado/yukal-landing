@@ -8,6 +8,10 @@ export default {
     fontFamily: {
       'sans': ['acumin-pro', 'sans'],
     },
+    fontWeight: {
+      normal: '100',
+      bold: '500',
+    },
     extend: {
       colors: {
         primary: {

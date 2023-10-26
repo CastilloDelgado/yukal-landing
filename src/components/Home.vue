@@ -1,15 +1,18 @@
 <script setup>
 import backgroundImage from "../assets/background.jpeg"
 import Layout from "./Layout.vue";
+import MainMessage from "./MainMessage.vue";
 import WelcomeMessage from "./WelcomeMessage.vue"
 </script>
 
 <template>
   <Layout>
-    <div class="background h-screen grid place-content-center ">
+    <!-- <div class="background h-screen grid place-content-center ">
       <img class="background h-screen w-full" :src="backgroundImage" alt="Background">
       <WelcomeMessage />
-    </div>
+    </div> -->
+
+    <MainMessage />
   </Layout>
 </template>
 
