@@ -2,14 +2,20 @@
 import logo from "../assets/logo-dark.png"
 import textLogo from "../assets/text-logo-dark.png"
 import CustomButton from "./CustomButton.vue";
+import { onMounted, ref } from "vue";
 
 import image1 from "../assets/images/1.jpg"
 import image2 from "../assets/images/2.jpg"
 import image3 from "../assets/images/3.jpg"
 import image4 from "../assets/images/4.jpg"
-import { ref } from "vue";
 
-const show = ref(true)
+const showTitle = ref(false)
+const showGallery = ref(false)
+
+onMounted(() => {
+    showTitle.value = true
+    showGallery.value = true
+})
 
 </script>
 
@@ -18,24 +24,30 @@ const show = ref(true)
         <div class="container h-full mx-auto grid place-content-center">
             <div class="flex flex-col lg:flex-row justify-center w-full">
                 <div class="lg:w-3/5 py-12">
-                    <div class="h-full grid place-content-center">
-                        <div class="flex justify-center mb-6">
-                            <img :src="logo" class="h-24 md:h-44" alt="">
-                            <img :src="textLogo" class="h-20 md:h-36" alt="">
+                    <Transition>
+                        <div v-if="showTitle" class="h-full grid place-content-center">
+                            <div class="flex justify-center mb-6">
+                                <img :src="logo" class="h-24 md:h-44" alt="">
+                                <img :src="textLogo" class="h-20 md:h-36" alt="">
+                            </div>
+                            <p class="text-2xl text-center text-primary-900 mx-16 mb-6">
+                                Acompañar e impulsar el despertar espiritual y de consciencia <b>resideñando el camino.</b>
+                            </p>
+                            <div class="flex justify-center">
+                                <CustomButton class="text-xl bg-primary-600 hover:bg-primary-700 text-primary-100" :action="() => isShowing = !isShowing" title="Suscribete" color="light"/>
+                                </div>
                         </div>
-                        <p class="text-2xl text-center text-primary-900 mx-16 mb-6">
-                            Acompañar e impulsar el despertar espiritual y de consciencia <b>resideñando el camino.</b>
-                        </p>
-                        <div class="flex justify-center">
-                            <CustomButton class="text-xl bg-primary-600 hover:bg-primary-600 text-primary-100" title="Suscribete" color="light"/>
-                        </div>
-                    </div>
+                    </Transition>
                 </div>
-                <div class="lg:w-2/5 columns-2 gap-2 h-full mb-6">
-                    <img class="w-full rounded aspect-square object-cover relative bottom-4" :src="image3" />
-                    <img class="w-full rounded aspect-video  object-cover relative bottom-2" :src="image1" />
-                    <img class="w-full rounded aspect-video  object-cover relative top-2" :src="image2" />
-                    <img class="w-full rounded aspect-square object-cover relative top-4" :src="image4" />
+                <div class="lg:w-2/5 h-full mb-6">
+                    <Transition name="slide-fade">
+                        <div v-if="showGallery" class="columns-2 gap-2">   
+                            <img class="w-full rounded aspect-square object-cover relative bottom-4" :src="image3" />
+                            <img class="w-full rounded aspect-video  object-cover relative bottom-2" :src="image1" />
+                            <img class="w-full rounded aspect-video  object-cover relative top-2" :src="image2" />
+                            <img class="w-full rounded aspect-square object-cover relative top-4" :src="image4" />
+                        </div>
+                    </Transition>     
                 </div>
             </div>
         </div>
@@ -47,5 +59,22 @@ const show = ref(true)
     background-image: url("../assets/graphics/welcome-background.svg");
     object-fit: cover;
     background-repeat: no-repeat;
+}
+
+.v-enter-active {
+  transition: opacity 1s ease;
+}
+
+.v-enter-from {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 1.5s ease-out;
+}
+
+.slide-fade-enter-from {
+  transform: translateX(20px);
+  opacity: 0;
 }
 </style>

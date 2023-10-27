@@ -8,6 +8,10 @@ const props = defineProps({
     color: {
         type: String,
         default: 'primary'
+    },
+    action: {
+        type: Function,
+        default: () => console.log("Undefined function")
     }
 })
 
@@ -15,6 +19,7 @@ const props = defineProps({
 <template>
     <button 
         class="px-4 py-2 hover:scale-105 transition rounded font-bold"
+        @click="action"
     >
         {{  title  }}
     </button>
