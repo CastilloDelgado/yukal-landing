@@ -23,9 +23,9 @@ onMounted(() => {
     <div class="bg-light-200 pt-16 pb-6 lg:pt-6 lg:h-screen background px-2">
         <div class="container h-full mx-auto grid place-content-center">
             <div class="flex flex-col lg:flex-row justify-center w-full">
-                <div class="lg:w-3/5 py-12">
+                <div class="lg:w-3/5 md:py-12">
                     <Transition>
-                        <div v-if="showTitle" class="h-screen md:h-full grid place-content-center">
+                        <div v-if="showTitle" class="h-[80vh] md:h-full grid place-content-center">
                             <div class="flex justify-center mb-6">
                                 <img :src="logo" class="h-24 md:h-44" alt="">
                                 <img :src="textLogo" class="h-20 md:h-36" alt="">
