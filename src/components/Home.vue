@@ -7,11 +7,6 @@ import WelcomeMessage from "./WelcomeMessage.vue"
 
 <template>
   <Layout>
-    <!-- <div class="background h-screen grid place-content-center ">
-      <img class="background h-screen w-full" :src="backgroundImage" alt="Background">
-      <WelcomeMessage />
-    </div> -->
-
     <MainMessage />
   </Layout>
 </template>

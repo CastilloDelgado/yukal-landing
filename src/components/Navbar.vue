@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import logo from "../assets/logo.png"
 import textLogo from "../assets/text-logo.png"
 import NavbarLink from './NavbarLink.vue';
+import CustomButton from './CustomButton.vue';
 
 const options = ref([
     {
@@ -43,9 +44,7 @@ const options = ref([
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <div class="align-middle hidden sm:flex">
                         <NavbarLink v-for="option in options" :key="option.id" :option="option"  />
-                        <button class="bg-light-600 text-light-50 px-3 py-1 hover:scale-105 transition rounded font-bold">
-                            Newsletter
-                        </button>
+                        <CustomButton class="text-sm bg-primary-600 hover:bg-primary-600 text-primary-100" title="Newsletter" color="light"/>
                     </div>
                 </div>
                 
