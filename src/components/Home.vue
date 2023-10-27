@@ -42,7 +42,8 @@ import ContactForm from "./ContactForm.vue";
     />
     <CompanyProducts
       title="Nuestros Servicios"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores magni, nam ad quaerat aspernatur eos quas exercitationem optio qui inventore nihil sapiente ipsum perferendis laborum laudantium illum similique eligendi!"
+      description="La siembra de proyecto es una ceremonia holística donde se le da nacimiento al emprendimiento de la persona, otorgándole al proyecto la importancia espiritual a través de los elementos de nuestra madre tierra y dándole un corazón con su energía particular y necesaria.
+"
       :products="[
         {
           id: 1,
@@ -53,7 +54,7 @@ import ContactForm from "./ContactForm.vue";
         {
           id: 2,
           title: 'Despertar espiritual',
-          description: 'Son experiencias cercanas a la es el polo positivo femenino. Tú puedes estar muerte o con experiencia de medicina sagrada, en despierto en consciencia y no en espíritu o al un parto, cuando te rompen el corazón, esto alude revés, esto es la densidad de la dualidad y se tiene al chacra corazón porque te contraes o te expandes que estar en balance. Los dos se tiene que a través de estas experiencias.',
+          description: 'Tú puedes estar muerte o con experiencia de medicina sagrada, en despierto en consciencia y no en espíritu o al un parto, cuando te rompen el corazón, esto alude revés, esto es la densidad de la dualidad y se tiene al chacra corazón porque te contraes o te expandes que estar en balance.',
           image: productsImage2
         },
         {

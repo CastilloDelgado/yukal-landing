@@ -42,10 +42,10 @@ onMounted(() => {
                 <div class="lg:w-2/5 h-full mb-6">
                     <Transition name="slide-fade">
                         <div v-if="showGallery" class="columns-2 gap-2">   
-                            <img class="w-full rounded aspect-square object-cover mb-2" :src="image3" />
-                            <img class="w-full rounded aspect-video  object-cover mb-2" :src="image1" />
-                            <img class="w-full rounded aspect-video  object-cover mb-2" :src="image2" />
-                            <img class="w-full rounded aspect-square object-cover mb-2" :src="image4" />
+                            <img @load="() => console.log('image loaded 1')" class="w-full rounded aspect-square object-cover mb-2" :src="image3" />
+                            <img @load="() => console.log('image loaded 2')" class="w-full rounded aspect-video  object-cover mb-2" :src="image1" />
+                            <img @load="() => console.log('image loaded 3')" class="w-full rounded aspect-video  object-cover mb-2" :src="image2" />
+                            <img @load="() => console.log('image loaded 4')" class="w-full rounded aspect-square object-cover mb-2" :src="image4" />
                         </div>
                     </Transition>     
                 </div>
