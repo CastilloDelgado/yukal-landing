@@ -3,14 +3,15 @@ import CompanyInfo from "./CompanyInfo.vue";
 import MainMessage from "./MainMessage.vue";
 import Layout from "./Layout.vue";
 
-import image1 from "../assets/images/carousel/1.jpg"
-import image2 from "../assets/images/carousel/2.jpg"
-import image3 from "../assets/images/carousel/3.jpg"
-import image4 from "../assets/images/carousel/4.jpg"
-import image5 from "../assets/images/carousel/5.jpg"
-import image6 from "../assets/images/carousel/6.jpg"
-import image7 from "../assets/images/carousel/7.jpg"
-import image8 from "../assets/images/carousel/8.jpg"
+import carouselImage1 from "../assets/images/carousel/1.jpg"
+import carouselImage2 from "../assets/images/carousel/2.jpg"
+import carouselImage3 from "../assets/images/carousel/3.jpg"
+import carouselImage4 from "../assets/images/carousel/4.jpg"
+import carouselImage5 from "../assets/images/carousel/5.jpg"
+import carouselImage6 from "../assets/images/carousel/6.jpg"
+import carouselImage7 from "../assets/images/carousel/7.jpg"
+import carouselImage8 from "../assets/images/carousel/8.jpg"
+import CompanyProducts from "./CompanyProducts.vue";
 
 </script>
 
@@ -25,7 +26,38 @@ import image8 from "../assets/images/carousel/8.jpg"
         Molestiae possimus quos expedita, quam suscipit hic debitis illum iusto incidunt, doloribus 
         fugiat rerum non tenetur deserunt iure fuga? Mollitia, perspiciatis eius."
       :images="[
-        image1,image2,image3,image4,image5,image6,image7,image8
+        carouselImage1,
+        carouselImage2,
+        carouselImage3,
+        carouselImage4,
+        carouselImage5,
+        carouselImage6,
+        carouselImage7,
+          carouselImage8
+      ]"
+    />
+    <CompanyProducts
+      title="Nuestros productos"
+      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores magni, nam ad quaerat aspernatur eos quas exercitationem optio qui inventore nihil sapiente ipsum perferendis laborum laudantium illum similique eligendi!"
+      :products="[
+        {
+          id: 1,
+          title: 'Producto Tipo 1',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae possimus quos expedit.',
+          image: carouselImage1
+        },
+        {
+          id: 2,
+          title: 'Producto Tipo 2',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae possimus quos expedit.',
+          image: carouselImage2
+        },
+        {
+          id: 3,
+          title: 'Producto Tipo 3',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae possimus quos expedit.',
+          image: carouselImage3
+        },
       ]"
     />
   </Layout>

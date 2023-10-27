@@ -20,7 +20,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="bg-primary-100 grid place-content-center">
+    <div class="bg-white grid place-content-center">
         <div class="container mx-auto flex flex-col lg:flex-row py-12">
             <div class="hidden lg:inline-block lg:w-1/2 h-full grid place-content-center">
                 <div>
