@@ -29,10 +29,10 @@ import image4 from "../assets/images/4.jpg"
                     </div>
                 </div>
                 <div class="lg:w-2/5 columns-2 gap-2 h-full mb-6">
-                    <img class="w-full rounded aspect-square object-cover mb-2" :src="image3" />
-                    <img class="w-full rounded aspect-video  object-cover" :src="image1" />
-                    <img class="w-full rounded aspect-video  object-cover mb-2" :src="image2" />
-                    <img class="w-full rounded aspect-square object-cover" :src="image4" />
+                    <img class="w-full rounded aspect-square object-cover relative bottom-4" :src="image3" />
+                    <img class="w-full rounded aspect-video  object-cover relative bottom-2" :src="image1" />
+                    <img class="w-full rounded aspect-video  object-cover relative top-2" :src="image2" />
+                    <img class="w-full rounded aspect-square object-cover relative top-4" :src="image4" />
                 </div>
             </div>
         </div>
@@ -42,6 +42,7 @@ import image4 from "../assets/images/4.jpg"
 <style scoped>
 .background {
     background-image: url("../assets/graphics/welcome-background.svg");
-    resize: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 </style>
