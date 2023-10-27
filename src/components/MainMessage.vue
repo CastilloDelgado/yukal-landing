@@ -11,16 +11,16 @@ import image4 from "../assets/images/4.jpg"
 </script>
 
 <template>
-    <div class="bg-light-100 h-screen">
+    <div class="bg-light-200 pt-24 lg:pt-0 lg:h-screen background px-2">
         <div class="container h-full mx-auto grid place-content-center">
-            <div class="flex w-full h-full">
-                <div class="w-3/5">
+            <div class="flex flex-col lg:flex-row justify-center w-full">
+                <div class="lg:w-3/5 py-12">
                     <div class="h-full grid place-content-center">
                         <div class="flex justify-center mb-6">
-                            <img :src="logo" class="h-44" alt="">
-                            <img :src="textLogo" class="h-36" alt="">
+                            <img :src="logo" class="h-24 md:h-44" alt="">
+                            <img :src="textLogo" class="h-20 md:h-36" alt="">
                         </div>
-                        <p class="text-2xl text-center text-primary-900 mx-16 mb-4">
+                        <p class="text-2xl text-center text-primary-900 mx-16 mb-6">
                             Acompañar e impulsar el despertar espiritual y de consciencia <b>resideñando el camino.</b>
                         </p>
                         <div class="flex justify-center">
@@ -28,7 +28,7 @@ import image4 from "../assets/images/4.jpg"
                         </div>
                     </div>
                 </div>
-                <div class="w-2/5 columns-2 gap-2 h-full">
+                <div class="lg:w-2/5 columns-2 gap-2 h-full mb-6">
                     <img class="w-full rounded aspect-square object-cover mb-2" :src="image3" />
                     <img class="w-full rounded aspect-video  object-cover" :src="image1" />
                     <img class="w-full rounded aspect-video  object-cover mb-2" :src="image2" />
@@ -38,3 +38,10 @@ import image4 from "../assets/images/4.jpg"
         </div>
     </div>  
 </template>
+
+<style scoped>
+.background {
+    background-image: url("../assets/graphics/welcome-background.svg");
+    resize: cover;
+}
+</style>
