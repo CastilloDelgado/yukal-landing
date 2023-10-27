@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="bg-light-200 pt-24 lg:pt-0 lg:h-screen background px-2">
+    <div class="bg-light-200 pt-16 pb-6 lg:pt-0 lg:h-screen background px-2">
         <div class="container h-full mx-auto grid place-content-center">
             <div class="flex flex-col lg:flex-row justify-center w-full">
                 <div class="lg:w-3/5 py-12">
@@ -35,7 +35,7 @@ onMounted(() => {
                             </p>
                             <div class="flex justify-center">
                                 <CustomButton class="text-xl bg-primary-600 hover:bg-primary-700 text-primary-100" :action="() => isShowing = !isShowing" title="Suscribete" color="light"/>
-                                </div>
+                            </div>
                         </div>
                     </Transition>
                 </div>
