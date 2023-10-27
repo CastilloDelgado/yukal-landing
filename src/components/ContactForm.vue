@@ -1,6 +1,12 @@
-
 <script setup>
 import CustomButton from './CustomButton.vue';
+
+defineProps({
+    message: {
+        type: String,
+        rquired: true
+    }
+})
 </script>
 
 <template>
@@ -8,7 +14,7 @@ import CustomButton from './CustomButton.vue';
         <div class="flex justify-center py-16 text-white">
             <form class="sm:2/3 lg:w-1/2">
                 <p class="text-center text-4xl font-bold mb-4">Contacto</p>
-                <p class="text-center text-lg  px-6 lg:px-24 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque, incidunt molestias fugit inventore ab voluptas quod.</p>
+                <p class="text-center text-lg  px-6 lg:px-24 mb-8">{{ message }}</p>
                 <div class="lg:px-16">
                     <div class="mb-2 flex flex-col">
                         <label class="text-lg mb-1" for="">Nombre Completo</label>

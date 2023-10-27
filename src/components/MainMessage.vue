@@ -20,12 +20,12 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="bg-light-200 pt-16 pb-6 lg:pt-0 lg:h-screen background px-2">
+    <div class="bg-light-200 pt-16 pb-6 lg:pt-6 lg:h-screen background px-2">
         <div class="container h-full mx-auto grid place-content-center">
             <div class="flex flex-col lg:flex-row justify-center w-full">
                 <div class="lg:w-3/5 py-12">
                     <Transition>
-                        <div v-if="showTitle" class="h-full grid place-content-center">
+                        <div v-if="showTitle" class="h-screen md:h-full grid place-content-center">
                             <div class="flex justify-center mb-6">
                                 <img :src="logo" class="h-24 md:h-44" alt="">
                                 <img :src="textLogo" class="h-20 md:h-36" alt="">
@@ -34,7 +34,7 @@ onMounted(() => {
                                 Acompañar e impulsar el despertar espiritual y de consciencia <b>resideñando el camino.</b>
                             </p>
                             <div class="flex justify-center">
-                                <CustomButton class="text-xl bg-primary-600 hover:bg-primary-700 text-primary-100" :action="() => isShowing = !isShowing" title="Suscribete" color="light"/>
+                                <CustomButton class="text-xl bg-primary-600 hover:bg-primary-700 text-primary-100" title="Contactanos" />
                             </div>
                         </div>
                     </Transition>
@@ -42,10 +42,10 @@ onMounted(() => {
                 <div class="lg:w-2/5 h-full mb-6">
                     <Transition name="slide-fade">
                         <div v-if="showGallery" class="columns-2 gap-2">   
-                            <img class="w-full rounded aspect-square object-cover relative bottom-4" :src="image3" />
-                            <img class="w-full rounded aspect-video  object-cover relative bottom-2" :src="image1" />
-                            <img class="w-full rounded aspect-video  object-cover relative top-2" :src="image2" />
-                            <img class="w-full rounded aspect-square object-cover relative top-4" :src="image4" />
+                            <img class="w-full rounded aspect-square object-cover mb-2" :src="image3" />
+                            <img class="w-full rounded aspect-video  object-cover mb-2" :src="image1" />
+                            <img class="w-full rounded aspect-video  object-cover mb-2" :src="image2" />
+                            <img class="w-full rounded aspect-square object-cover mb-2" :src="image4" />
                         </div>
                     </Transition>     
                 </div>

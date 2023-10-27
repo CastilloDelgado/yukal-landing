@@ -31,7 +31,7 @@ defineProps({
                 <div>
                     <p class="text-primary-600 text-4xl font-bold mb-8">{{ title }}</p>
                     <p class="text-center text-primary-800 lg:text-justify mb-8 px-4 md:px-16 lg:px-12 text-lg">{{  description }}</p>
-                    <CustomButton class="bg-primary-600 hover:bg-primary-700 text-primary-100" title="Newsletter" />
+                    <CustomButton class="bg-primary-600 hover:bg-primary-700 text-primary-100" title="Contactanos" />
                 </div>
             </div>
             <div class="lg:hidden lg:w-1/2 h-auto grid place-content-center">

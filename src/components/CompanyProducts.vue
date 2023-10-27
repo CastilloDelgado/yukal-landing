@@ -25,7 +25,7 @@ defineProps({
             <div class="px-2">
                 <div class="mb-12 text-center">
                     <p class="text-primary-600 font-bold text-4xl mb-6">{{ title }}</p>
-                    <p class="text-primary-800 text-lg px-6 lg:px-36">{{ description }}</p>
+                    <p class="text-primary-800 px-8 text-justify lg:text-center text-lg md:px-36 lg:px-64">{{ description }}</p>
                 </div>
                 <div class="flex flex-wrap w-full justify-center gap-6">
                     <ProductBadge v-for="product in products" :key="product.id" :product="product"/>

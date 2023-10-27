@@ -44,7 +44,7 @@ const options = ref([
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <div class="align-middle hidden sm:flex">
                         <NavbarLink v-for="option in options" :key="option.id" :option="option"  />
-                        <CustomButton class="text-sm bg-primary-600 hover:bg-primary-700 hover:bg-primary-600 text-primary-100" title="Newsletter" color="light"/>
+                        <CustomButton class="text-sm bg-primary-600 hover:bg-primary-700 hover:bg-primary-600 text-primary-100" title="Contactanos"/>
                     </div>
                 </div>
             </div>
