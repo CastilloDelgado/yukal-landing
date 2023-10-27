@@ -30,7 +30,7 @@ onMounted(() => {
                                 <img :src="logo" class="h-24 md:h-44" alt="">
                                 <img :src="textLogo" class="h-20 md:h-36" alt="">
                             </div>
-                            <p class="text-2xl text-center text-primary-900 mx-16 mb-6">
+                            <p class="text-2xl text-center text-primary-900  mx-2 lg:mx-16 mb-6">
                                 Acompañar e impulsar el despertar espiritual y de consciencia <b>resideñando el camino.</b>
                             </p>
                             <div class="flex justify-center">

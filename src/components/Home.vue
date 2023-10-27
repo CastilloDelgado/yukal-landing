@@ -1,5 +1,6 @@
 <script setup>
 import backgroundImage from "../assets/background.jpeg"
+import CompanyInfo from "./CompanyInfo.vue";
 import Layout from "./Layout.vue";
 import MainMessage from "./MainMessage.vue";
 import WelcomeMessage from "./WelcomeMessage.vue"
@@ -8,6 +9,7 @@ import WelcomeMessage from "./WelcomeMessage.vue"
 <template>
   <Layout>
     <MainMessage />
+    <CompanyInfo />
   </Layout>
 </template>
 
