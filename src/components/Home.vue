@@ -12,6 +12,7 @@ import carouselImage6 from "../assets/images/carousel/6.jpg"
 import carouselImage7 from "../assets/images/carousel/7.jpg"
 import carouselImage8 from "../assets/images/carousel/8.jpg"
 import CompanyProducts from "./CompanyProducts.vue";
+import ContactForm from "./ContactForm.vue";
 
 </script>
 
@@ -60,6 +61,7 @@ import CompanyProducts from "./CompanyProducts.vue";
         },
       ]"
     />
+    <ContactForm />
   </Layout>
   <p>
     

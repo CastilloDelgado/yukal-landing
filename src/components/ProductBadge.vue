@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="rounded-lg bg-primary-200 text-center p-3 w-1/4">
+    <div class="rounded-lg bg-primary-200 text-center p-3 w-full sm:w-1/3 lg:w-1/4">
         <div class="w-full object-cover flex justify-center mb-6">
             <img class=" rounded-lg" :src="product.image" />
         </div>

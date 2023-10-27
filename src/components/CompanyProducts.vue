@@ -22,12 +22,12 @@ defineProps({
 <template>
     <div class="bg-primary-100 py-24">
         <div class="container mx-auto">
-            <div>
+            <div class="px-2">
                 <div class="mb-12 text-center">
                     <p class="text-primary-600 font-bold text-4xl mb-6">{{ title }}</p>
-                    <p class="text-primary-800 text-lg px-36">{{ description }}</p>
+                    <p class="text-primary-800 text-lg px-6 lg:px-36">{{ description }}</p>
                 </div>
-                <div class="flex w-full justify-center gap-6">
+                <div class="flex flex-wrap w-full justify-center gap-6">
                     <ProductBadge v-for="product in products" :key="product.id" :product="product"/>
                 </div>
             </div>
