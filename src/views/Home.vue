@@ -1,7 +1,9 @@
 <script setup>
-import CompanyInfo from "./CompanyInfo.vue";
-import MainMessage from "./MainMessage.vue";
-import Layout from "./Layout.vue";
+import CompanyInfo from "../components/CompanyInfo.vue";
+import MainMessage from "../components/MainMessage.vue";
+import CompanyProducts from "../components/CompanyProducts.vue";
+import ContactForm from "../components/ContactForm.vue";
+import Layout from "../components/Layout.vue";
 
 import carouselImage1 from "../assets/images/carousel/1.jpg"
 import carouselImage2 from "../assets/images/carousel/2.jpg"
@@ -16,10 +18,8 @@ import productsImage1 from "../assets/images/products/1.jpg"
 import productsImage2 from "../assets/images/products/2.jpg"
 import productsImage3 from "../assets/images/products/3.jpg"
 
-
-
-import CompanyProducts from "./CompanyProducts.vue";
-import ContactForm from "./ContactForm.vue";
+import video from "../assets/videos/presentation.mp4"
+import VideoPresentation from "../components/VideoPresentation.vue";
 
 </script>
 
@@ -40,6 +40,7 @@ import ContactForm from "./ContactForm.vue";
         carouselImage8
       ]"
     />
+    <VideoPresentation :video="video" />
     <CompanyProducts
       title="Nuestros Servicios"
       description="La siembra de proyecto es una ceremonia holística donde se le da nacimiento al emprendimiento de la persona, otorgándole al proyecto la importancia espiritual a través de los elementos de nuestra madre tierra y dándole un corazón con su energía particular y necesaria.
