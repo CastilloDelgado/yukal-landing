@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="rounded-lg text-center p-3 w-full sm:w-1/2 lg:w-1/4">
+    <div class="rounded-lg text-center p-3 w-full sm:w-1/2 lg:w-1/4 hover:scale-[102%] transition">
         <div class="w-full object-cover flex justify-center mb-6">
             <img class="rounded-lg" :src="product.image" />
         </div>
