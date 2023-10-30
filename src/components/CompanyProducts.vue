@@ -1,6 +1,19 @@
 <script setup>
+import { ref } from 'vue';
 import ProductBadge from './ProductBadge.vue';
+import CustomButton from './CustomButton.vue';
 
+const backgroundColors = ref([
+    'bg-primary-100',
+    'bg-primary-200',
+    'bg-primary-300',
+    'bg-primary-400',
+    'bg-primary-500',
+    'bg-primary-600',
+    'bg-primary-700',
+    'bg-primary-800',
+    'bg-primary-900',
+])
 
 defineProps({
     title: {
@@ -28,7 +41,7 @@ defineProps({
                     <p class="text-primary-800 px-8 text-justify text-lg md:px-36 lg:px-64">{{ description }}</p>
                 </div>
                 <div class="flex flex-wrap w-full justify-center gap-6">
-                    <ProductBadge v-for="product in products" :key="product.id" :product="product"/>
+                    <ProductBadge v-for="(product, index) in products" :class="[backgroundColors[index + 1]]" :key="product.id" :product="product"/>
                 </div>
             </div>
         </div>
